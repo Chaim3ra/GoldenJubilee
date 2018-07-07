@@ -8,74 +8,60 @@
 
 
     <Button
-        android:id="@+id/videobut"
-        android:layout_width="220dp"
+        android:id="@+id/chroniclebut"
+        android:layout_width="250dp"
         android:layout_height="80dp"
         android:background="@color/black_overlay"
-        android:text="VIDEO"
+        android:text="CHRONICLE"
         android:textColor="@android:color/white"
         android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/milestonebut"
+        app:layout_constraintBottom_toTopOf="@+id/felicitationbut"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/milestonebut"
+        android:id="@+id/felicitationbut"
         style="@style/Widget.AppCompat.Button"
-        android:layout_width="220dp"
+        android:layout_width="250dp"
         android:layout_height="80dp"
         android:background="@drawable/arrow_but"
-        android:text="MILESTONES"
+        android:text="FELICITATION"
         android:textColor="@android:color/white"
         android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/discoverybut"
+        app:layout_constraintBottom_toTopOf="@+id/festivalsbut"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/videobut" />
+        app:layout_constraintTop_toBottomOf="@+id/chroniclebut" />
 
     <Button
-        android:id="@+id/discoverybut"
-        android:layout_width="220dp"
+        android:id="@+id/festivalsbut"
+        android:layout_width="250dp"
         android:layout_height="80dp"
         android:background="@color/black_overlay"
-        android:text="DISCOVERY"
+        android:text="festivals"
         android:textColor="@android:color/white"
         android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/picturebut"
+        app:layout_constraintBottom_toTopOf="@+id/guestsbut"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/milestonebut" />
+        app:layout_constraintTop_toBottomOf="@+id/felicitationbut" />
 
     <Button
-        android:id="@+id/picturebut"
-        android:layout_width="220dp"
+        android:id="@+id/guestsbut"
+        android:layout_width="250dp"
         android:layout_height="80dp"
         android:background="@color/black_overlay"
-        android:text="PICTURES"
-        android:textColor="@android:color/white"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/button5"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/discoverybut" />
-
-    <Button
-        android:id="@+id/button5"
-        android:layout_width="220dp"
-        android:layout_height="80dp"
-        android:background="@color/black_overlay"
-        android:text="Button"
+        android:text="GUESTS"
         android:textColor="@android:color/white"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/picturebut" />
+        app:layout_constraintTop_toBottomOf="@+id/festivalsbut" />
 
 </android.support.constraint.ConstraintLayout>

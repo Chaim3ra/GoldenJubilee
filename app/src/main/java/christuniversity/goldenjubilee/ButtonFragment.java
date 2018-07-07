@@ -4,8 +4,6 @@ import android.app.Fragment;
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
 import android.os.Bundle;
-import android.transition.Slide;
-import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -15,7 +13,7 @@ public class ButtonFragment extends Fragment {
 
     View view;
 
-    Button videobutton,milestonebutton,picturebutton,discoverybutton,button5;
+    Button chroniclebutton,felicationbutton,guestsbutton,festivalsbutton;
 
 
 
@@ -23,39 +21,40 @@ public class ButtonFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         view = inflater.inflate(R.layout.butlayout, container, false);
 
-        videobutton=(Button)view.findViewById(R.id.videobut);
-        milestonebutton=(Button)view.findViewById(R.id.milestonebut);
-        picturebutton=(Button)view.findViewById(R.id.picturebut);
-        discoverybutton=(Button)view.findViewById(R.id.discoverybut);
-        button5=(Button)view.findViewById(R.id.button5);
+        chroniclebutton=(Button)view.findViewById(R.id.chroniclebut);
+        felicationbutton=(Button)view.findViewById(R.id.felicitationbut);
+        guestsbutton=(Button)view.findViewById(R.id.guestsbut);
+        festivalsbutton=(Button)view.findViewById(R.id.festivalsbut);
+        //button5=(Button)view.findViewById(R.id.button5);
         //button6=(Button)view.findViewById(R.id.button6);
 
 
-        videobutton.setOnClickListener(new View.OnClickListener() {
+        chroniclebutton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                loadFragment(new ChronicleFragment());
+                loadFragment2(new ChronicleButtonFragment());
+            }
+        });
+
+        felicationbutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 loadFragment(new FirstFragment());
             }
         });
 
-        picturebutton.setOnClickListener(new View.OnClickListener() {
+        guestsbutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                loadFragment(new DefaultFragment());
+                loadFragment2(new ChronicleButtonFragment());
             }
         });
 
-        milestonebutton.setOnClickListener(new View.OnClickListener() {
+        festivalsbutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                loadFragment2(new MilestoneFragment());
-            }
-        });
-
-        discoverybutton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                loadFragment2(new DiscoveryFragment());
+                loadFragment2(new FestivalButtonFragment());
             }
         });
 
