@@ -4,34 +4,31 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bg2"
     tools:context=".MainActivity">
 
 
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="center"
+        app:srcCompat="@drawable/bg2" />
+
     <FrameLayout
         android:id="@+id/frameLayout"
-        android:layout_width="920dp"
-        android:layout_height="518dp"
+        android:layout_width="950dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="30dp"
         android:layout_marginEnd="30dp"
         android:layout_marginRight="30dp"
-        android:layout_marginTop="2dp"
-        android:background="@android:drawable/dialog_holo_light_frame"
+        android:layout_marginTop="30dp"
+        android:background="@android:color/transparent"
         android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
     </FrameLayout>
-
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="70dp"
-        android:layout_height="70dp"
-        android:layout_marginTop="8dp"
-        android:src="@drawable/logo"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
     <FrameLayout
         android:id="@+id/buttonLayout"

@@ -20,9 +20,9 @@
 
     <ScrollView
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="24dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="95dp"
+        android:layout_marginTop="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -35,87 +35,124 @@
             android:orientation="vertical">
 
             <Button
-                android:id="@+id/button2"
+                android:id="@+id/festival1"
                 android:layout_width="250dp"
                 android:layout_height="80dp"
-                android:text="Button" />
+                android:background="@color/black_overlay"
+                android:text="Button 1"
+                android:textColor="@android:color/white"
+                android:textSize="20sp" />
 
             <Button
-                android:id="@+id/button3"
+                android:id="@+id/festival2"
                 android:layout_width="250dp"
                 android:layout_height="80dp"
-                android:layout_marginTop="120dp"
-                android:text="Button" />
+                android:layout_marginTop="30dp"
+                android:background="@color/black_overlay"
+                android:text="Button 2"
+                android:textColor="@android:color/white"
+                android:textSize="20sp" />
 
             <Button
-                android:id="@+id/button5"
+                android:id="@+id/festival3"
                 android:layout_width="250dp"
                 android:layout_height="80dp"
-                android:layout_marginTop="20dp"
-                android:text="Button" />
+                android:layout_marginTop="30dp"
+                android:background="@color/black_overlay"
+                android:text="Button 3"
+                android:textColor="@android:color/white"
+                android:textSize="20sp" />
 
             <Button
-                android:id="@+id/button6"
+                android:id="@+id/festival4"
                 android:layout_width="250dp"
                 android:layout_height="80dp"
-                android:layout_marginTop="20dp"
-                android:text="Button" />
+                android:layout_marginTop="30dp"
+                android:background="@color/black_overlay"
+                android:scrollbars="none"
+                android:text="Button 4"
+                android:textColor="@android:color/white"
+                android:textSize="20sp" />
 
             <Button
-                android:id="@+id/button4"
+                android:id="@+id/festival5"
                 android:layout_width="250dp"
                 android:layout_height="80dp"
-                android:layout_marginTop="20dp"
-                android:text="Button" />
+                android:layout_marginTop="30dp"
+                android:background="@color/black_overlay"
+                android:text="Button 5"
+                android:textColor="@android:color/white"
+                android:textSize="20sp" />
 
             <Button
-                android:id="@+id/button7"
+                android:id="@+id/festival6"
                 android:layout_width="250dp"
                 android:layout_height="80dp"
-                android:layout_marginTop="20dp"
-                android:text="Button" />
+                android:layout_marginTop="30dp"
+                android:background="@color/black_overlay"
+                android:text="Button 6"
+                android:textColor="@android:color/white"
+                android:textSize="20sp" />
 
             <Button
-                android:id="@+id/button8"
+                android:id="@+id/festival7"
                 android:layout_width="250dp"
                 android:layout_height="80dp"
-                android:layout_marginTop="20dp"
-                android:text="Button" />
+                android:layout_marginTop="30dp"
+                android:background="@color/black_overlay"
+                android:text="Button 7"
+                android:textColor="@android:color/white"
+                android:textSize="20sp" />
 
             <Button
-                android:id="@+id/button9"
+                android:id="@+id/festival8"
                 android:layout_width="250dp"
                 android:layout_height="80dp"
-                android:layout_marginTop="20dp"
-                android:text="Button" />
+                android:layout_marginTop="30dp"
+                android:background="@color/black_overlay"
+                android:text="Button 8"
+                android:textColor="@android:color/white"
+                android:textSize="20sp" />
 
             <Button
-                android:id="@+id/button10"
+                android:id="@+id/festival9"
                 android:layout_width="250dp"
                 android:layout_height="80dp"
-                android:layout_marginTop="20dp"
-                android:text="Button" />
+                android:layout_marginTop="30dp"
+                android:background="@color/black_overlay"
+                android:text="Button 9"
+                android:textColor="@android:color/white"
+                android:textSize="20sp" />
 
             <Button
-                android:id="@+id/button11"
+                android:id="@+id/festival10"
                 android:layout_width="250dp"
                 android:layout_height="80dp"
-                android:layout_marginTop="20dp"
-                android:text="Button" />
+                android:layout_marginTop="30dp"
+                android:background="@color/black_overlay"
+                android:text="Button 10"
+                android:textColor="@android:color/white"
+                android:textSize="20sp" />
 
             <Button
-                android:id="@+id/button12"
+                android:id="@+id/festival11"
                 android:layout_width="250dp"
                 android:layout_height="80dp"
-                android:layout_marginTop="20dp"
-                android:text="Button" />
+                android:layout_marginTop="30dp"
+                android:background="@color/black_overlay"
+                android:text="Button 11"
+                android:textColor="@android:color/white"
+                android:textSize="20sp" />
 
             <Button
-                android:id="@+id/button13"
+                android:id="@+id/festival12"
                 android:layout_width="250dp"
                 android:layout_height="80dp"
-                android:layout_marginTop="20dp"
-                android:text="Button" />
+                android:layout_marginTop="30dp"
+                android:background="@color/black_overlay"
+                android:text="Button 12"
+                android:textColor="@android:color/white"
+                android:textSize="20sp" />
         </LinearLayout>
 
 

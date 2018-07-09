@@ -40,20 +40,21 @@ public class ButtonFragment extends Fragment {
         felicationbutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                loadFragment(new FirstFragment());
+                loadFragment(new FelicitationFragment());
             }
         });
 
         guestsbutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                loadFragment2(new ChronicleButtonFragment());
+                loadFragment(new GuestsFragment());
             }
         });
 
         festivalsbutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                loadFragment(new FestivalFragment());
                 loadFragment2(new FestivalButtonFragment());
             }
         });

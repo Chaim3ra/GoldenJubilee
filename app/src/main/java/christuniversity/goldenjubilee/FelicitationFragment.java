@@ -14,7 +14,7 @@ import android.widget.Button;
 import android.widget.MediaController;
 import android.widget.VideoView;
 
-public class FirstFragment extends Fragment {
+public class FelicitationFragment extends Fragment {
 
     View view;
     Button button1;
@@ -23,7 +23,7 @@ public class FirstFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
     {
-        view = inflater.inflate(R.layout.firstfrag, container, false);
+        view = inflater.inflate(R.layout.felicitationlayout, container, false);
         MediaController mc = new MediaController(getActivity());
         VideoView view1 = (VideoView)view.findViewById(R.id.videoView);
         view1.setSystemUiVisibility(View.GONE);
