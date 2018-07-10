@@ -19,6 +19,7 @@ public class ChronicleButtonFragment extends Fragment {
     View view;
     Button button1,button2,button3;
     ImageButton back;
+    Global2 g1=Global2.getInstance();
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -33,6 +34,8 @@ public class ChronicleButtonFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 Toast.makeText(getActivity(),"Christ College",Toast.LENGTH_SHORT).show();
+                g1.setData("chronicle1");
+                loadFragment(new ChronicleVideoFragment());
 
             }
         });
@@ -41,6 +44,8 @@ public class ChronicleButtonFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 Toast.makeText(getActivity(), "Christ Autonomous", Toast.LENGTH_SHORT).show();
+                g1.setData("chronicle1");
+                loadFragment(new ChronicleVideoFragment());
             }
         });
 
@@ -48,6 +53,8 @@ public class ChronicleButtonFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 Toast.makeText(getActivity(),"Christ Deemed to be University",Toast.LENGTH_SHORT).show();
+                g1.setData("chronicle1");
+                loadFragment(new ChronicleVideoFragment());
             }
         });
 

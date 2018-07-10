@@ -55,7 +55,7 @@ public class FestivalButtonFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 Toast.makeText(getActivity(),"Button 1",Toast.LENGTH_SHORT).show();
-                g1.setData("defaultvid");
+                g1.setData("darpan");
                 loadFragment(new FestivalVideoFragment());
 
             }
@@ -74,7 +74,7 @@ public class FestivalButtonFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 Toast.makeText(getActivity(),"Button 3",Toast.LENGTH_SHORT).show();
-                g1.setData("video3");
+                g1.setData("inbloom");
                 loadFragment(new FestivalVideoFragment());
 
             }
@@ -86,7 +86,7 @@ public class FestivalButtonFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 Toast.makeText(getActivity(),"Button 4",Toast.LENGTH_SHORT).show();
-                g1.setData("festvideo4");
+                g1.setData("nritta");
 
             }
         });
