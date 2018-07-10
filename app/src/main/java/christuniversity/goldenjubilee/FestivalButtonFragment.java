@@ -13,6 +13,8 @@ import android.widget.Toast;
 
 public class FestivalButtonFragment extends Fragment {
 
+
+
     public FestivalButtonFragment() {
         // Required empty public constructor
     }
@@ -21,19 +23,21 @@ public class FestivalButtonFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
+
+        //String vids[]=new String[]{"android.resource://" + getActivity().getPackageName() + "/" + R.raw.defaultvid,"android.resource://" + getActivity().getPackageName() + "/" + R.raw.video2,"android.resource://" + getActivity().getPackageName() + "/" + R.raw.video3};
         View view= inflater.inflate(R.layout.festivalbuttonlayout, container, false);
         Button btn1=(Button)view.findViewById(R.id.festival1);
         Button btn2=(Button)view.findViewById(R.id.festival2);
         Button btn3=(Button)view.findViewById(R.id.festival3);
         Button btn4=(Button)view.findViewById(R.id.festival4);
-        Button btn5=(Button)view.findViewById(R.id.festival5);
-        Button btn6=(Button)view.findViewById(R.id.festival6);
+        //Button btn5=(Button)view.findViewById(R.id.festival5);
+        /*Button btn6=(Button)view.findViewById(R.id.festival6);
         Button btn7=(Button)view.findViewById(R.id.festival7);
         Button btn8=(Button)view.findViewById(R.id.festival8);
         Button btn9=(Button)view.findViewById(R.id.festival9);
         Button btn10=(Button)view.findViewById(R.id.festival10);
         Button btn11=(Button)view.findViewById(R.id.festival11);
-        Button btn12=(Button)view.findViewById(R.id.festival12);
+        Button btn12=(Button)view.findViewById(R.id.festival12);*/
         ImageButton back=(ImageButton)view.findViewById(R.id.backButton);
 
         back.setOnClickListener(new View.OnClickListener() {
@@ -45,10 +49,14 @@ public class FestivalButtonFragment extends Fragment {
             }
         });
 
+        final Global g1=Global.getInstance();
+
         btn1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Toast.makeText(getActivity(),"Button 1",Toast.LENGTH_SHORT).show();
+                g1.setData("defaultvid");
+                loadFragment(new FestivalVideoFragment());
 
             }
         });
@@ -57,6 +65,8 @@ public class FestivalButtonFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 Toast.makeText(getActivity(),"Button 2",Toast.LENGTH_SHORT).show();
+                g1.setData("video2");
+                loadFragment(new FestivalVideoFragment());
 
             }
         });
@@ -64,6 +74,8 @@ public class FestivalButtonFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 Toast.makeText(getActivity(),"Button 3",Toast.LENGTH_SHORT).show();
+                g1.setData("video3");
+                loadFragment(new FestivalVideoFragment());
 
             }
         });
@@ -74,14 +86,16 @@ public class FestivalButtonFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 Toast.makeText(getActivity(),"Button 4",Toast.LENGTH_SHORT).show();
+                g1.setData("festvideo4");
 
             }
         });
 
-        btn5.setOnClickListener(new View.OnClickListener() {
+        /*btn5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Toast.makeText(getActivity(),"Button 5",Toast.LENGTH_SHORT).show();
+                g1.setData("festvideo5");
 
             }
         });
@@ -134,7 +148,7 @@ public class FestivalButtonFragment extends Fragment {
                 Toast.makeText(getActivity(),"Button 12",Toast.LENGTH_SHORT).show();
 
             }
-        });
+        });*/
 
         return view;
 

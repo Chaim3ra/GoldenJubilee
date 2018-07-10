@@ -6,29 +6,40 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <VideoView
-        android:id="@+id/videoView3"
-        android:layout_width="916dp"
-        android:layout_height="515dp"
-        android:layout_marginTop="8dp"
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="#ffd700"
+        app:cardCornerRadius="4dp"
+        app:cardElevation="20dp"
+        app:contentPadding="3dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.616"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent">
+
+        <VideoView
+            android:id="@+id/videoView3"
+            android:layout_width="950dp"
+            android:layout_height="535dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </android.support.v7.widget.CardView>
 
     <HorizontalScrollView
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_gravity="center_vertical"
-        android:layout_marginBottom="4dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginBottom="1dp"
+        android:layout_marginTop="4dp"
         android:scrollbars="none"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.838"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/videoView3">
+        app:layout_constraintTop_toBottomOf="@+id/cardView">
 
         <LinearLayout
             android:id="@+id/id_gallery"

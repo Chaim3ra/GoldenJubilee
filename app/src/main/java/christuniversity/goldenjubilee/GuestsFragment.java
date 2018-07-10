@@ -31,12 +31,12 @@ public class GuestsFragment extends Fragment {
         //this.mContext=Context;
         view = inflater.inflate(R.layout.guestslayout, container, false);
         mInflater = LayoutInflater.from(view.getContext());
-        //MediaController mc = new MediaController(getActivity());
+        MediaController mc = new MediaController(getActivity());
         videoView=(VideoView)view.findViewById(R.id.videoView3);
         videoView.setSystemUiVisibility(View.GONE);
         String path = "android.resource://" + getActivity().getPackageName() + "/" + R.raw.video2;
         videoView.setVideoURI(Uri.parse(path));
-        //videoView.setMediaController(mc);
+        videoView.setMediaController(mc);
         videoView.start();
         mImgIds = new int[] { R.drawable.bg, R.drawable.bg2, R.drawable.logo,R.drawable.bg,R.drawable.bg2,R.drawable.logo,R.drawable.bg,R.drawable.logo,R.drawable.bg2
         };

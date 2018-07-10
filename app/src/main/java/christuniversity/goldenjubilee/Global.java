@@ -1,13 +1,13 @@
 package christuniversity.goldenjubilee;
 
 public class Global{
-    private static Globals instance;
+    private static Global instance;
 
     // Global variable
     private String name;
 
     // Restrict the constructor from being instantiated
-    private Globals2(){}
+    private Global(){}
 
     public void setData(String d){
 
@@ -18,9 +18,9 @@ public class Global{
         return this.name;
     }
 
-    public static synchronized Globals2 getInstance(){
+    public static synchronized Global getInstance(){
         if(instance==null){
-            instance=new Globals2();
+            instance=new Global();
         }
         return instance;
     }
