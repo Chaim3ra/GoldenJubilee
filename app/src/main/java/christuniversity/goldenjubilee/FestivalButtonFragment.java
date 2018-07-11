@@ -38,7 +38,7 @@ public class FestivalButtonFragment extends Fragment {
         Button btn10=(Button)view.findViewById(R.id.festival10);
         Button btn11=(Button)view.findViewById(R.id.festival11);
         Button btn12=(Button)view.findViewById(R.id.festival12);*/
-        ImageButton back=(ImageButton)view.findViewById(R.id.backButton);
+        Button back=(Button)view.findViewById(R.id.backButton);
 
         back.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -37,7 +37,7 @@ public class ChronicleVideoFragment extends Fragment{
         view1.setSystemUiVisibility(View.GONE);
         String path = "android.resource://" + getActivity().getPackageName() + "/raw/" + vidname;
         view1.setVideoURI(Uri.parse(path));
-        //view1.setMediaController(mc);
+        view1.setMediaController(mc);
         view1.start();
         return view;
     }

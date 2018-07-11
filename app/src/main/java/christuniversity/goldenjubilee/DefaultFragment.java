@@ -25,7 +25,7 @@ public class DefaultFragment extends Fragment {
         MediaController mc = new MediaController(getActivity());
         VideoView view1 = (VideoView)view.findViewById(R.id.videoView2);
         view1.setSystemUiVisibility(View.GONE);
-        String path = "android.resource://" + getActivity().getPackageName() + "/" + R.raw.defaultvid;
+        String path = "android.resource://" + getActivity().getPackageName() + "/" + R.raw.defaultvid2;
         view1.setVideoURI(Uri.parse(path));
         //view1.setMediaController(mc);
         view1.start();

@@ -20,7 +20,7 @@ public class ChronicleFragment extends Fragment {
         MediaController mc = new MediaController(getActivity());
         VideoView view1 = (VideoView) view.findViewById(R.id.videoView5);
         view1.setSystemUiVisibility(View.GONE);
-        String path = "android.resource://" + getActivity().getPackageName() + "/" + R.raw.chronicleidle;
+        String path = "android.resource://" + getActivity().getPackageName() + "/" + R.raw.defaultvid2;
         view1.setVideoURI(Uri.parse(path));
         //view1.setMediaController(mc);
         view1.start();

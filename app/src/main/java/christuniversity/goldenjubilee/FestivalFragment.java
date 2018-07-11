@@ -22,9 +22,9 @@ public class FestivalFragment extends Fragment {
         MediaController mc = new MediaController(getActivity());
         VideoView view1 = (VideoView) view.findViewById(R.id.videoView4);
         view1.setSystemUiVisibility(View.GONE);
-        String path = "android.resource://" + getActivity().getPackageName() + "/" + R.raw.festsidle;
+        String path = "android.resource://" + getActivity().getPackageName() + "/" + R.raw.video2;
         view1.setVideoURI(Uri.parse(path));
-        //view1.setMediaController(mc);
+        view1.setMediaController(mc);
         view1.start();
         return view;
     }

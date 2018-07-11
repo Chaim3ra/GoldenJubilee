@@ -10,7 +10,7 @@
         android:layout_height="wrap_content"
         app:cardBackgroundColor="#ffd700"
         app:cardCornerRadius="4dp"
-        app:cardElevation="20dp"
+        app:cardElevation="30dp"
         app:contentPadding="3dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
